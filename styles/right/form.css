@@ -1,0 +1,126 @@
+/* WANT */
+.want h2 {
+  font: var(--label-medium);
+  color: var(--content-primary);
+}
+
+.want p {
+  font: var(--paragraph-large);
+  color: var(--content-secondary);
+}
+
+form .inputs {
+  display: flex;
+  gap: 12px;
+}
+
+/* INPUTS */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-wrapper label {
+  font: var(--label-medium);
+  color: #C7C9CC;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.numbers {
+  appearance: none;
+  width: 100px;
+  border-radius: .5rem;
+  border: none;
+  text-align: center;
+  font: var(--display-small);
+  color: #ffffff;
+}
+
+.numbers:focus {
+  outline: none;
+}
+
+/* TOGGLE */
+.no-repeat {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: .75rem;
+}
+
+.no-repeat span {
+  font: var(--paragraph-small);
+  color: var(--content-primary);
+}
+
+.toggle {
+  position: relative;
+  width: 36px;
+  height: 20px;
+}
+
+.toggle input {
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #C7C9CC;
+  border-radius: 999px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: var(--gradient-background);
+}
+
+input:checked + .slider::before {
+  transform: translateX(14px);
+}
+
+form button {
+  background: var(--background-tertiary);
+  border-radius: .5rem;
+  font: var(--label-medium);
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+form button:hover {
+  background:
+    linear-gradient(var(--background-tertiary), var(--background-tertiary)) padding-box,
+    var(--gradient-border) border-box;
+}
+
+form button:hover .arrow-right {
+  transform: translate(14px, 6px);
+}
+
+.arrow-right {
+  background: url(../../assets/arrow-right.svg) no-repeat center / cover;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transform: translate(4px, 6px);
+
+  transition: transform 0.6s ease;
+}
+
+

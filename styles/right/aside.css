@@ -1,0 +1,123 @@
+/* ASIDE */
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+aside h2 {
+  font: var(--label-medium);
+  color: var(--content-primary);
+}
+
+aside p {
+  font: var(--overline);
+  color: var(--content-secondary);
+}
+
+aside button {
+  background: var(--background-tertiary);
+  border-radius: .5rem;
+  font: var(--label-medium);
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-top: 20px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+
+  white-space: nowrap;
+}
+
+aside button .again {
+    background: url(../../assets/again.svg) no-repeat center / cover;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  transform: translate(4px, 4px);
+  transition: transform 1.5s ease;
+  }
+
+aside button.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+aside button:hover {
+  background:
+    linear-gradient(var(--background-tertiary), var(--background-tertiary)) padding-box,
+    var(--gradient-border) border-box;
+}
+
+aside button:hover .again {
+    transform: translate(4px, 4px) rotate(360deg);
+  }
+
+/* NUMBER */
+.number {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background: transparent;
+  color: black;
+  transform: scale(0);
+  opacity: 0;
+  font: 700 64px "Roboto Mono", monospace;
+}
+
+.numbers-result {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.numbers-wrapper {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number.animate {
+  animation: revealSpin 4s ease forwards;
+}  
+
+/* ANIMATION */
+@keyframes revealSpin {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+    background: transparent;
+    color: transparent;
+  }
+
+  20% {
+    transform: scale(1.1) rotate(0deg);
+    opacity: 1;
+    background: var(--content-brand);
+    color: transparent;
+  }
+
+  50% {
+    transform: scale(1.1) rotate(360deg);
+    background: var(--content-brand);
+    color: black;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    background: transparent;
+    color: var(--content-brand);
+    opacity: 1;
+  }
+}

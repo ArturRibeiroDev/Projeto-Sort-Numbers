@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 60px;
+}
+
+.logo img {
+  width: 34px;
+  height: 34px;
+}
+
+.logo h1 {
+  font: 800 24px/130% "Sora", sans-serif;
+  transform: translateY(4px);
+}
+
+.title span {
+  font: var(--overline);
+  color: rgb(37, 36, 36);
+  margin-bottom: 12px;
+}
+
+.title h1 {
+  font: var(--display-large);
+  color: var(--content-primary);
+  margin-bottom: 1rem;
+}

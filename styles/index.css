@@ -1,0 +1,7 @@
+@import url(global.css);
+
+@import url(right/form.css);
+@import url(right/aside.css);
+
+@import url(left/title.css);
+@import url(left/footer.css);

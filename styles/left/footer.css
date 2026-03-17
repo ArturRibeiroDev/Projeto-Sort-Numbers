@@ -1,0 +1,26 @@
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 386px;
+}
+
+footer h3 {
+  display: flex;
+  gap: .5rem;
+  margin-left: -1.75rem;
+  font: var(--paragraph-medium);
+  color: var(--content-brand);
+}
+
+footer p {
+  font: var(--paragraph-small);
+  color: var(--content-secondary);
+}
+
+.person {
+  background: url(../../assets/person.svg) no-repeat center / cover;
+  width: 20px;
+  height: 20px;
+}
