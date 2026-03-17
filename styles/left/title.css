@@ -16,7 +16,11 @@
 
 .title span {
   font: var(--overline);
-  color: rgb(37, 36, 36);
+  
+  background: var(--gradient-content); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+
   margin-bottom: 12px;
 }
 
