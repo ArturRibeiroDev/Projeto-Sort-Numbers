@@ -1,4 +1,6 @@
+
 // Declarei as variáveis padrões
+tira a tuas coisas da lixeira ótario!
 const form = document.querySelector("form")
 const numbers = document.getElementById("numbers")
 const FirstNumber = document.getElementById("first-number")
