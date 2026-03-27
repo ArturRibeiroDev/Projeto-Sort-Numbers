@@ -55,7 +55,7 @@ form.onsubmit = (event) => {
   }
   
   // Transformo o valor da Array nos números sorteados
-  let Numbers_Sorted = SortEachNumbers(quantity, min, max)
+  let Numbers_Sorted = SortEachNumber(quantity, min, max)
 
   if (!Numbers_Sorted) return
 
@@ -88,7 +88,7 @@ function Sort(min, max) {
 }
 
 // Função que pega os números sorteados e põe na Array
-function SortEachNumbers(numbers, FirstNumber, SecondNumber) {
+function SortEachNumber(numbers, FirstNumber, SecondNumber) {
   let Numbers_Sorted = []
   if (repeat.checked) {
       const range = SecondNumber - FirstNumber + 1
@@ -148,7 +148,7 @@ again.addEventListener("click", () => {
   const min = Number(FirstNumber.value)
   const max = Number(SecondNumber.value)
 
-  let Numbers_Sorted = SortEachNumbers(quantity, min, max)
+  let Numbers_Sorted = SortEachNumber(quantity, min, max)
 
   if (!Numbers_Sorted) return
 
