@@ -32,14 +32,22 @@ form .inputs {
   appearance: none;
   width: 100px;
   border-radius: .5rem;
-  border: none;
+  border: 2px solid var(--background-gray);
   text-align: center;
   font: var(--display-small);
   color: #ffffff;
+  background: var(--background-secondary);
+  cursor: text;
+  transition: border-color 0.3s ease;
+}
+
+.numbers:hover {
+  border-color: var(--content-brand);
 }
 
 .numbers:focus {
   outline: none;
+  border-color: var(--accent-blue);
 }
 
 /* TOGGLE */
