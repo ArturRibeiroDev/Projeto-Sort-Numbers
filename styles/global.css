@@ -101,3 +101,108 @@ aside button, form button {
   display: flex;
 }
 
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 0 24px;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 32px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  .right {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --display-large: 800 48px/130% "Sora", sans-serif;
+    --display-medium: 800 32px/130% "Sora", sans-serif;
+    --display-small: 700 24px/130% "Sora", sans-serif;
+    --label-medium: 700 18px/150% "Inter", sans-serif;
+    --label-small: 700 14px/150% "Inter", sans-serif;
+  }
+
+  aside button, form button {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .number {
+    width: 72px;
+    height: 72px;
+    font: 700 40px "Roboto Mono", monospace;
+  }
+
+  .numbers-result {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  body {
+    padding: 20px 0;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .right {
+    align-items: stretch;
+  }
+
+  aside button, form button {
+    max-width: none;
+  }
+
+  form .inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .numbers {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .input-wrapper label {
+    margin-top: 20px;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .no-repeat {
+    justify-content: center;
+  }
+
+  .number {
+    width: 64px;
+    height: 64px;
+    font: 700 32px "Roboto Mono", monospace;
+  }
+}
+
